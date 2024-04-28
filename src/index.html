@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+  <div class="transaction">
+    <button class="btn" id="select-btn">بارگزاری تراکنش ها</button>
+    <main class="table" id="transaction">
+      <section class="table__header">
+        <h1>لیست تراکنش های شما</h1>
+        <div class="input-group">
+          <input type="search" id="search" placeholder="جستجو تراکنش" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </div>
+      </section>
+      <section class="table__body">
+        <table>
+          <thead>
+            <tr>
+              <th>ردیف</th>
+              <th>نوع تراکنش</th>
+              <th class="table_header" data-column="price" data-order="desc">
+                مبلغ <span class="icon-arrow">&UpArrow;</span>
+              </th>
+              <th>شماره پیگیری</th>
+              <th class="table_header" data-column="date" data-order="desc">
+                تاریخ تراکنش <span class="icon-arrow">&UpArrow; </span>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="tableRows">
+            <!-- <tr>
+              <td>1</td>
+              <td>افزایش اعتبار</td>
+              <td>1,000,000</td>
+              <td>123126411</td>
+              <td>1399/08/12</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>برداشت از حساب</td>
+              <td>10,000,000</td>
+              <td>123126411</td>
+              <td>1399/08/12</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>افزایش اعتبار</td>
+              <td>1,000,000</td>
+              <td>123126411</td>
+              <td>1399/08/12</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div> 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+      integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
